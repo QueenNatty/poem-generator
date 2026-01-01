@@ -7,39 +7,43 @@
     <title>AI Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>Poem generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>Poem generator</h1>
+      </header>
 
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Enter your poem topic"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div id="poem">
-        poem stuff
-        <br />
-        another stuff
-      </div>
-    </main>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Enter your poem topic"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit"  class="submit-button"/>
+        </form>
+        <div id="poem" class="poem">
+          poem stuff
+          <br />
+          another stuff
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="http://www.github.com/QueenNatty" target="_blank"
-        >Natania Ezeigwe</a
-      >
-      and is open-sourced on
-      <a href="https://github.com/QueenNatty/poem-generator" target="_blank">
-        Github</a
-      >
-      and is hosted on Netflify.
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="http://www.github.com/QueenNatty" target="_blank"
+          >Natania Ezeigwe</a
+        >
+        and is open-sourced on
+        <a href="https://github.com/QueenNatty/poem-generator" target="_blank">
+          Github</a
+        >
+        and is hosted on Netflify.
+      </footer>
+    </div>
+
     <script src="src/index.js"></script>
   </body>
 </html>
