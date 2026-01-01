@@ -63,6 +63,17 @@ form {
     box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
 }
 
+.generating {
+    color: #885df1;
+    font-style: italic;
+    text-align: center;
+}
+
+.error {
+    color: #e74c3c;
+    text-align: center;
+}
+
 footer {
     text-align: center;
     font-size: 13px;
