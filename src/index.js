@@ -4,6 +4,7 @@ function displayPoem(response) {
   const poemElement = document.querySelector("#poem");
   if (poemElement) {
     poemElement.innerHTML = "";
+    poemElement.classList.remove("hidden");
   }
 
   createTypewriter("#poem", poemText);
@@ -22,8 +23,9 @@ function generatePoem(event) {
 
   const poemElement = document.querySelector("#poem");
   if (poemElement) {
+    poemElement.classList.remove("hidden");
     poemElement.innerHTML =
-      "<div class='generating'>⏳ Generating your poem...</div>";
+      "<div class='generating'>⏳ Generating your poem...✨</div>";
   }
 
   const apiKEY = "433a60610691c65a16b446fo40atef84";
@@ -34,7 +36,6 @@ function generatePoem(event) {
     prompt
   )}&context=${encodeURIComponent(context)}&key=${apiKEY}`;
 
-  // Make API call with error handling
   axios
     .get(apiURL)
     .then(displayPoem)
