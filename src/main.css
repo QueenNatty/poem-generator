@@ -1,6 +1,4 @@
-/* ===== CSS Variables for Light and Dark Themes ===== */
 :root {
-  /* Light Theme Colors */
   --bg-primary: #f8f6fc;
   --bg-secondary: #ffffff;
   --bg-form: #ffffff;
@@ -14,20 +12,18 @@
   --shadow-sm: 0 2px 8px rgba(133, 96, 136, 0.08);
   --shadow-md: 0 8px 24px rgba(133, 96, 136, 0.12);
   --shadow-lg: 0 16px 48px rgba(133, 96, 136, 0.15);
-  
-  /* UI Elements */
+
   --border-radius: 16px;
   --border-radius-sm: 12px;
   --border-radius-lg: 20px;
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  
-  /* Typography */
-  --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-serif: 'Crimson Pro', Georgia, serif;
+
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+  --font-serif: "Crimson Pro", Georgia, serif;
 }
 
 [data-theme="dark"] {
-  /* Dark Theme Colors */
   --bg-primary: #1a1625;
   --bg-secondary: #251f34;
   --bg-form: #2d2640;
@@ -43,7 +39,6 @@
   --shadow-lg: 0 16px 48px rgba(0, 0, 0, 0.5);
 }
 
-/* ===== Global Styles ===== */
 * {
   margin: 0;
   padding: 0;
@@ -69,7 +64,6 @@ a:hover {
   color: var(--primary-hover);
 }
 
-/* ===== Container ===== */
 .container {
   margin: 0 auto;
   max-width: 680px;
@@ -79,7 +73,6 @@ a:hover {
   flex-direction: column;
 }
 
-/* ===== Header ===== */
 header {
   margin-bottom: 48px;
   display: flex;
@@ -108,7 +101,6 @@ h1 {
   font-weight: 400;
 }
 
-/* ===== Theme Toggle Button ===== */
 .theme-toggle {
   background: var(--bg-form);
   border: 1px solid var(--border-color);
@@ -150,7 +142,6 @@ h1 {
   display: none;
 }
 
-/* ===== Form Container ===== */
 .form-container {
   background: var(--bg-form);
   border: 1px solid var(--border-color);
@@ -218,15 +209,12 @@ form {
   transform: translateY(0);
 }
 
-/* ===== Hint ===== */
 .hint {
   font-size: 14px;
   color: var(--text-muted);
   margin-bottom: 32px;
   padding-left: 4px;
 }
-
-/* ===== Poem Display ===== */
 .poem {
   font-family: var(--font-serif);
   font-size: 18px;
@@ -263,7 +251,6 @@ form {
   font-family: var(--font-sans);
 }
 
-/* ===== Footer ===== */
 footer {
   margin-top: auto;
   padding-top: 64px;
@@ -319,11 +306,13 @@ footer {
 }
 
 :root {
-  --icon-filter: brightness(0) saturate(100%) invert(24%) sepia(15%) saturate(1824%) hue-rotate(229deg) brightness(92%) contrast(91%);
+  --icon-filter: brightness(0) saturate(100%) invert(24%) sepia(15%)
+    saturate(1824%) hue-rotate(229deg) brightness(92%) contrast(91%);
 }
 
 [data-theme="dark"] {
-  --icon-filter: brightness(0) saturate(100%) invert(95%) sepia(5%) saturate(464%) hue-rotate(207deg) brightness(102%) contrast(93%);
+  --icon-filter: brightness(0) saturate(100%) invert(95%) sepia(5%)
+    saturate(464%) hue-rotate(207deg) brightness(102%) contrast(93%);
 }
 
 .social-links a:hover .social-icon {
@@ -349,9 +338,9 @@ footer {
   color: var(--text-muted);
 }
 
-/* ===== Animations ===== */
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     opacity: 1;
   }
   50% {
@@ -359,55 +348,54 @@ footer {
   }
 }
 
-/* ===== Responsive Design ===== */
 @media (max-width: 768px) {
   .container {
     padding: 24px 16px;
   }
-  
+
   header {
     margin-bottom: 32px;
   }
-  
+
   h1 {
     font-size: 36px;
   }
-  
+
   .subtitle {
     font-size: 16px;
   }
-  
+
   .form-container {
     padding: 20px;
   }
-  
+
   form {
     flex-direction: column;
   }
-  
+
   .instructions {
     width: 100%;
   }
-  
+
   .submit-button {
     width: 100%;
     padding: 16px;
   }
-  
+
   .poem {
     padding: 24px;
     font-size: 16px;
   }
-  
+
   .social-links {
     gap: 12px;
   }
-  
+
   .social-links a {
     width: 36px;
     height: 36px;
   }
-  
+
   .social-icon {
     width: 18px;
     height: 18px;
@@ -418,25 +406,25 @@ footer {
   h1 {
     font-size: 28px;
   }
-  
+
   .subtitle {
     font-size: 14px;
   }
-  
+
   .theme-toggle {
     width: 44px;
     height: 44px;
   }
-  
+
   .form-container {
     padding: 16px;
   }
-  
+
   .poem {
     padding: 20px;
     font-size: 15px;
   }
-  
+
   .footer-text {
     font-size: 14px;
   }
